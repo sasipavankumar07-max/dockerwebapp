@@ -3,7 +3,7 @@ version: "3"
 
 services:
   devopsdb:
-    image: shaikmustafa/harikanew:dbimage
+    image: sasipk/auto:dbimg
     ports:
       - "3306:3306"
     deploy:
@@ -12,7 +12,7 @@ services:
       - mynet
 
   application:
-    image: shaikmustafa/harikanew:appimage
+    image: sasipk/auto:appimg
     ports:
       - "1111:8080"
     deploy:
